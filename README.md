@@ -145,12 +145,12 @@ git add -A
 git commit -m "update"
 git push -u origin main
 ```
+</details>
 
 ## Make a Technical Modification
 
 Added WARNING state to the system assessment.  This creates a three tier labeling: STABLE, WARNING, or DEGRADED.  The added WARNING label gives an earlier visibility into degrading performance before it becomes critical (DEGRADED).  The WARNING label was intentionally set low for this modification to ensure proper labeling of the .csv info.
 
-</details>
 
 ## Notes
 
