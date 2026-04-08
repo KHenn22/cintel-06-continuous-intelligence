@@ -151,6 +151,37 @@ git push -u origin main
 
 Added WARNING state to the system assessment.  This creates a three tier labeling: STABLE, WARNING, or DEGRADED.  The added WARNING label gives an earlier visibility into degrading performance before it becomes critical (DEGRADED).  The WARNING label was intentionally set low for this modification to ensure proper labeling of the .csv info.
 
+## Custom Project - STL Airport On-Time Performance Pipeline
+
+### What This Pipeline Does
+This pipeline analyzes arrival on-time performance data for Lambert-St. Louis
+International Airport (STL) from the Bureau of Transportation Statistics (BTS).
+It reads monthly flight data, assesses STL's performance each month, and labels
+each month as STABLE, WARNING, or DEGRADED based on on-time arrival percentage.  It strictly analyzes on-time performance solely on if a scheduled flight arrived within 15 minutes of a scheduled time.  It does not analyze the reason for the delay (i.e. if the delay actually started at the departure airport, was weather related, caused by a traffic management initiative, etc.).
+
+### Data Source
+Bureau of Transportation Statistics (BTS)
+Reporting Carrier On-Time Performance (1987-present)
+Fields: Year, Month, Dest, ArrDelayMinutes
+Filtered to: STL (Lambert-St. Louis International Airport)
+Time Period: 2025 (January - December)
+
+### Thresholds
+- STABLE: On-time arrival percentage >= 80%
+- WARNING: On-time arrival percentage between 70% and 80%
+- DEGRADED: On-time arrival percentage < 70%
+Note:  An arrival is considered on-time if it arrived within 15 minutes of its scheduled time.  This pipeline does not filter for the reason behind the delay.
+
+### Previous Technical Modification
+Added a three-tier assessment label (STABLE, WARNING, DEGRADED) to replace
+the original two-tier system (STABLE, DEGRADED). This provides earlier
+visibility into degrading airport performance before it becomes critical.
+
+### How to Run
+`uv run python -m cintel.ontime_reporting_hennelly`
+
+### Output File
+`artifacts/ontime_assessment_hennelly.csv`
 
 ## Notes
 
