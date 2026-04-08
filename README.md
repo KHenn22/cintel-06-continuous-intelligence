@@ -169,13 +169,20 @@ Time Period: 2025 (January - December)
 ### Thresholds
 - STABLE: On-time arrival percentage >= 80%
 - WARNING: On-time arrival percentage between 70% and 80%
-- DEGRADED: On-time arrival percentage < 70%  
+- DEGRADED: On-time arrival percentage < 70%
 Note:  An arrival is considered on-time if it arrived within 15 minutes of its scheduled time.  This pipeline does not filter for the reason behind the delay.
 
 ### Previous Technical Modification
 Added a three-tier assessment label (STABLE, WARNING, DEGRADED) to replace
 the original two-tier system (STABLE, DEGRADED). This provides earlier
 visibility into degrading airport performance before it becomes critical.
+
+### Key Findings
+STL's 2025 on-time performance shows a clear seasonal pattern.
+Winter and fall months (Jan-Apr, Sep-Nov) maintained STABLE performance
+above 80%. Summer months (May-Aug) dropped to WARNING level, possibly due
+to thunderstorm activity common in the St. Louis region.  However, a comprehensive analysis between the reasons for delays was not conducted in this analysis. December also returned to WARNING, consistent with possible winter weather impacts.
+![STL ontime performance 2025](docs/images/STL_ontime_performance2025.png)
 
 ### How to Run
 `uv run python -m cintel.ontime_reporting_hennelly`
