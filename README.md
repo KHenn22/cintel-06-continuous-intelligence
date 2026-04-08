@@ -169,7 +169,7 @@ Time Period: 2025 (January - December)
 ### Thresholds
 - STABLE: On-time arrival percentage >= 80%
 - WARNING: On-time arrival percentage between 70% and 80%
-- DEGRADED: On-time arrival percentage < 70%
+- DEGRADED: On-time arrival percentage < 70%,
 Note:  An arrival is considered on-time if it arrived within 15 minutes of its scheduled time.  This pipeline does not filter for the reason behind the delay.
 
 ### Previous Technical Modification
