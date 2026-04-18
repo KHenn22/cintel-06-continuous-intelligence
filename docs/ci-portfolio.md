@@ -28,7 +28,7 @@ Anomalies were detected using simple threshold-based detection on clinic patient
 
 ### Artifacts
 
-[artifacts/anomalies_hennelly.csv](../artifacts/anomalies_hennelly.csv) contains 24 detected anomalies from adult patient records, with columns for age, height, and severity classifications (age_severity, height_severity, severity_level).
+[artifacts/anomalies_hennelly.csv](https://github.com/KHenn22/cintel-02-static-anomalies/blob/main/artifacts/anomalies_hennelly.csv) contains 24 detected anomalies from adult patient records, with columns for age, height, and severity classifications (age_severity, height_severity, severity_level).
 
 ### Insights
 
@@ -49,7 +49,7 @@ This module focuses on `aviation_signal_analysis.py`, which analyzes January 202
 
 ### Artifacts
 
-[artifacts/aviation_signals_jan_2025.csv](../artifacts/aviation_signals_jan_2025.csv) contains the per-carrier delay summary and the high_delay_alert signal.
+[artifacts/aviation_signals_jan_2025.csv](https://github.com/KHenn22/cintel-03-signal-design/blob/main/artifacts/aviation_signals_jan_2025.csv) contains the per-carrier delay summary and the high_delay_alert signal.
 
 ### Insights
 
@@ -67,7 +67,7 @@ The `airline_delay_rolling_monitor_hennelly.py` script aggregates daily flight d
 
 ### Artifacts
 
-[artifacts/airline_delay_rolling_metrics_hennelly.csv](../artifacts/airline_delay_rolling_metrics_hennelly.csv) contains daily airline metrics, rolling statistics for each carrier, and boolean spike flags (`cancellation_spike_flag`, `delay_spike_flag`).
+[artifacts/airline_delay_rolling_metrics_hennelly.csv](https://github.com/KHenn22/cintel-04-rolling-monitoring/blob/main/artifacts/airline_delay_rolling_metrics_hennelly.csv) contains daily airline metrics, rolling statistics for each carrier, and boolean spike flags (`cancellation_spike_flag`, `delay_spike_flag`).
 
 ### Insights
 
@@ -91,9 +91,9 @@ Drift is flagged when the mean or median difference exceeds the thresholds: 20 r
 
 ### Artifacts
 
-[artifacts/drift_summary_hennelly_percentage.csv](../artifacts/drift_summary_hennelly_percentage.csv) contains the side-by-side reference/current summary, mean/median differences, percent changes, and drift flags.
+[artifacts/drift_summary_hennelly_percentage.csv](https://github.com/KHenn22/cintel-05-drift-detection/blob/main/artifacts/drift_summary_hennelly_percentage.csv) contains the side-by-side reference/current summary, mean/median differences, percent changes, and drift flags.
 
-[artifacts/drift_summary_long_hennelly_percentage.csv](../artifacts/drift_summary_long_hennelly_percentage.csv) contains the same summary in a long-form, and easier-to-read row-per-field format.
+[artifacts/drift_summary_long_hennelly_percentage.csv](https://github.com/KHenn22/cintel-05-drift-detection/blob/main/artifacts/drift_summary_long_hennelly_percentage.csv) contains the same summary in a long-form, and easier-to-read row-per-field format.
 
 ### Insights
 
