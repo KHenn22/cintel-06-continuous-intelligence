@@ -10,7 +10,7 @@ This page summarizes my work on **continuous intelligence** projects.
 
 ### Repository Link
 
-[(clickable link to your repository)](https://github.com/KHenn22/cintel-06-continuous-intelligence)
+[(cintel-06-continuous intelligence)](https://github.com/KHenn22/cintel-06-continuous-intelligence)
 
 ### Brief Overview of Project Tools and Choices
 
@@ -20,7 +20,7 @@ The continuous intelligence projects through this course implement a comprehensi
 
 ### Repository Link
 
-[(clickable link to your repository)](https://github.com/KHenn22/cintel-02-static-anomalies)
+[(cintel-02-static-anomalies)](https://github.com/KHenn22/cintel-02-static-anomalies)
 
 ### Techniques
 
@@ -28,7 +28,7 @@ Anomalies were detected using simple threshold-based detection on clinic patient
 
 ### Artifacts
 
-[artifacts/anomalies_hennelly.csv](artifacts/anomalies_hennelly.csv) contains 24 detected anomalies from adult patient records, with columns for age, height, and severity classifications (age_severity, height_severity, severity_level).
+[artifacts/anomalies_hennelly.csv](../artifacts/anomalies_hennelly.csv) contains 24 detected anomalies from adult patient records, with columns for age, height, and severity classifications (age_severity, height_severity, severity_level).
 
 ### Insights
 
@@ -38,7 +38,7 @@ The analysis detected 24 anomalies in what was intended to be a pediatric clinic
 
 ### Repository Link
 
-[(clickable link to your repository)](https://github.com/KHenn22/cintel-03-signal-design)
+[(cintel-03-signal-design)](https://github.com/KHenn22/cintel-03-signal-design)
 
 ### Signals
 
@@ -49,7 +49,7 @@ This module focuses on `aviation_signal_analysis.py`, which analyzes January 202
 
 ### Artifacts
 
-[artifacts/aviation_signals_jan_2025.csv](artifacts/aviation_signals_jan_2025.csv) contains the per-carrier delay summary and the high_delay_alert signal.
+[artifacts/aviation_signals_jan_2025.csv](../artifacts/aviation_signals_jan_2025.csv) contains the per-carrier delay summary and the high_delay_alert signal.
 
 ### Insights
 
@@ -59,7 +59,7 @@ Grouping by carrier and converting delay counts into a delay-rate alert makes it
 
 ### Repository Link
 
-[(clickable link to your repository)](https://github.com/KHenn22/cintel-04-rolling-monitoring)
+[(cintel-04-rolling-monitoring)](https://github.com/KHenn22/cintel-04-rolling-monitoring)
 
 ### Techniques
 
@@ -67,7 +67,7 @@ The `airline_delay_rolling_monitor_hennelly.py` script aggregates daily flight d
 
 ### Artifacts
 
-[artifacts/airline_delay_rolling_metrics_hennelly.csv](artifacts/airline_delay_rolling_metrics_hennelly.csv) contains daily airline metrics, rolling statistics for each carrier, and boolean spike flags (`cancellation_spike_flag`, `delay_spike_flag`).
+[artifacts/airline_delay_rolling_metrics_hennelly.csv](../artifacts/airline_delay_rolling_metrics_hennelly.csv) contains daily airline metrics, rolling statistics for each carrier, and boolean spike flags (`cancellation_spike_flag`, `delay_spike_flag`).
 
 ### Insights
 
@@ -81,7 +81,7 @@ For example, the `airline_delay_rolling_metrics_hennelly.csv` shows cancellation
 
 ### Repository Link
 
-[(clickable link to your repository)](https://github.com/KHenn22/cintel-05-drift-detection)
+[(cintel-05-drift-detection)](https://github.com/KHenn22/cintel-05-drift-detection)
 
 ### Techniques
 
@@ -91,9 +91,9 @@ Drift is flagged when the mean or median difference exceeds the thresholds: 20 r
 
 ### Artifacts
 
-[artifacts/drift_summary_hennelly_percentage.csv](artifacts/drift_summary_hennelly_percentage.csv) contains the side-by-side reference/current summary, mean/median differences, percent changes, and drift flags.
+[artifacts/drift_summary_hennelly_percentage.csv](../artifacts/drift_summary_hennelly_percentage.csv) contains the side-by-side reference/current summary, mean/median differences, percent changes, and drift flags.
 
-[artifacts/drift_summary_long_hennelly_percentage.csv](artifacts/drift_summary_long_hennelly_percentage.csv) contains the same summary in a long-form, and easier-to-read row-per-field format.
+[artifacts/drift_summary_long_hennelly_percentage.csv](../artifacts/drift_summary_long_hennelly_percentage.csv) contains the same summary in a long-form, and easier-to-read row-per-field format.
 
 ### Insights
 
@@ -108,7 +108,7 @@ All drift flags are true in the summary artifact, indicating that both mean and 
 
 ### Repository Link
 
-[(clickable link to your repository)](https://github.com/KHenn22/cintel-06-continuous-intelligence)
+[(cintel-06-continous intelligence)](https://github.com/KHenn22/cintel-06-continuous-intelligence)
 
 ### Techniques
 
@@ -120,7 +120,7 @@ The assessment connects earlier CI concepts by combining airport data filtering,
 
 ### Artifacts
 
-[artifacts/ontime_assessment_hennelly.csv](artifacts/ontime_assessment_hennelly.csv) contains the monthly on-time arrival percentages for STL in 2025 and the derived system state classification.
+[artifacts/ontime_assessment_hennelly.csv](../artifacts/ontime_assessment_hennelly.csv) contains the monthly on-time arrival percentages for STL in 2025 and the derived system state classification.
 
 ### Assessment
 
